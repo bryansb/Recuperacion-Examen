@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../css/main_format.css" rel="stylesheet">
+        <link href="../../css/index_layout.css" rel="stylesheet">
+        <title>Inicio - Sistema</title>
+    </head>
+
+    <body>
+        <header id="main_header">
+            <div id="logo_container">
+                <a href="index.html" id="img_logo">
+                    <img src="../../resources/icons/logo.png" alt="Logo Parqueadero"/>
+                </a>
+            </div>
+
+            <nav id="header_nav">
+                <a class="nav_a" href="index.html">Inicio</a>
+                <a class="nav_a" href="register_ticket.html">Registrar Ticket</a>
+                <a class="nav_a" href="search_ticket.html">Buscar Ticket</a>
+                <a class="nav_a" href="search_client.html">Buscar Cliente</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section id="section_welcome">
+                <div id="welcome_text">
+                    <header>
+                        <h2>Bienvenidos al Parqueadero Nuva</h2>
+                    </header>
+                    
+                    <p>
+                        Comience gestionando los datos.
+                    </p>
+                
+                    <button type="button" class="index_button" onclick="location.href='register_ticket.html'">Registrar Ticket</button>
+                    <button type="button" class="index_button" onclick="location.href='search_client.html'">Buscar Cliente</button>
+                </div>
+                <img src="../../resources/images/main_photo.jpg" alt="index main image"/>
+            </section>
+        </main>
+
+        <!-- Creditos Icono LOGO
+            <div>
+                Iconos diseñados por 
+                <a href="https://www.flaticon.es/autores/payungkead" title="Payungkead">Payungkead</a> from 
+                <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+            </div> 
+        -->
+
+        <footer id="pie">
+            <div class="cont_pie">
+                <div id="logo_pie">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../../resources/icons/faceLogo.png" alt="Facebook Logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../../resources/icons/instaLogo.png" alt="Instagram Logo"></a>
+                </div>
+                <img class="logo" src="../../resources/icons/logoSO.png" alt="LOGO">
+
+                <p>
+                    Universidad Politécnica Salesiana <br />
+                    <br/>
+                    Sarmiento Basurto Douglas Bryan <br/>
+                    <span><strong>Correo :</strong><a href="mailto:dsarmientob1@est.ups.edu.ec"> dsarmientob1@est.ups.edu.ec</a></span> <br />
+                    <br/>
+                    &copy; Todos los derechos reservados
+                </p>
+            </div>
+
+            <div class="cont_pie">
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <nav>
+                        <a class="nav_a" href="register_ticket.html">Registrar un Ticket</a>
+                        <a class="nav_a" href="search_client.html"> Buscar un Cliente</a>
+                    </nav>
+                </fieldset>
+            </div>
+
+            <div class="cont_pie">
+                <fieldset>
+                    <legend>General</legend>
+                    <nav>
+                        <a class="nav_a" href="#">Sobre Nosotros</a>
+                        <a class="nav_a" href="#">Contáctanos</a>
+                    </nav>
+                </fieldset>
+            </div>
+        </footer>
+    </body>
+</html>

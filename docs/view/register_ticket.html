@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../css/main_format.css" rel="stylesheet">
+        <link href="../../css/form_layout.css" rel="stylesheet"/>
+        <link href="../../css/2_col_layout.css" rel="stylesheet"/>
+        <script src="../../js/administration.js"></script>
+        <script src="../../js/resources.js"></script>
+        <title>Registro de Tickets</title>
+    </head>
+
+    <body>
+        <header id="main_header">
+            <div id="logo_container">
+                <a href="index.html" id="img_logo">
+                    <img src="../../resources/icons/logo.png" alt="Logo Parqueadero"/>
+                </a>
+            </div>
+
+            <nav id="header_nav">
+                <a class="nav_a" href="index.html">Inicio</a>
+                <a class="nav_a" href="register_ticket.html">Registrar Ticket</a>
+                <a class="nav_a" href="search_ticket.html">Buscar Ticket</a>
+                <a class="nav_a" href="search_client.html">Buscar Cliente</a>
+            </nav>
+        </header>
+
+        <h2 class="main_title">Registro de Ticket</h2>
+        <main class="main_container center_container">
+            <section class="col col-40">
+                <div id="main_notice" class="e_hidden">
+                    <div id="notice" class="div_notice"></div>
+                    <img src="../../resources/icons/close.png" class="close_x" onclick="hideNotice()">
+                </div>
+
+                <form id="f_ticket" class="form_data" onsubmit=" return createTicket(event)"
+                    method="POST">
+                    <label for="i_dni" class="l_i_text">Cédula del Cliente:</label>
+                    <input type="text" name="i_dni" id="i_dni" class="text_input"/>
+                    <br>
+                    <span id="s_dni_notice" class="s_error_validation"></span>
+                    <label for="i_plate" class="l_i_text">Placa de Vehiculo:</label>
+                    <input type="text" name="i_plate" id="i_plate" class="text_input"/>
+                    <br>
+                    <label for="i_brand" class="l_i_text">Marca de Vehiculo:</label>
+                    <input type="text" name="i_brand" id="i_brand" class="text_input"/>
+                    <br>
+                    <label for="i_model" class="l_i_text">Modelo de Vehiculo:</label>
+                    <input type="text" name="i_model" id="i_model" class="text_input"/>
+                    <br>
+                    <label for="i_ticket_number" class="l_i_text">Numero de Ticket:</label>
+                    <input type="text" name="i_ticket_number" id="i_ticket_number" class="text_input"/>
+                    <br>
+                    <label for="i_date_in" class="l_i_text">Fecha de Ingreso:</label>
+                    <input type="date" name="i_date_in" id="i_date_in" class="text_input"/>
+                    <br>
+                    <label for="i_time_in" class="l_i_text">Hora de Ingreso:</label>
+                    <input type="time" name="i_time_in" id="i_time_in" class="text_input"/>
+                    <br>
+                    <label for="i_date_out" class="l_i_text">Fecha de Salida:</label>
+                    <input type="date" name="i_date_out" id="i_date_out" class="text_input"/>
+                    <br>
+                    <label for="i_time_out" class="l_i_text">Hora de Salida:</label>
+                    <input type="time" name="i_time_out" id="i_time_out" class="text_input"/>
+                    <br>
+                    <div class="d_button_container">
+                        <input type="submit" id="i_send_data" class="submit_input" value="Enviar"/>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+        <footer id="pie">
+            <div class="cont_pie">
+                <div id="logo_pie">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../../resources/icons/faceLogo.png" alt="Facebook Logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../../resources/icons/instaLogo.png" alt="Instagram Logo"></a>
+                </div>
+                <img class="logo" src="../../resources/icons/logoSO.png" alt="LOGO">
+
+                <p>
+                    Universidad Politécnica Salesiana <br />
+                    <br/>
+                    Sarmiento Basurto Douglas Bryan <br/>
+                    <span><strong>Correo :</strong><a href="mailto:dsarmientob1@est.ups.edu.ec"> dsarmientob1@est.ups.edu.ec</a></span> <br />
+                    <br/>
+                    &copy; Todos los derechos reservados
+                </p>
+            </div>
+
+            <div class="cont_pie">
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <nav>
+                        <a class="nav_a" href="register_ticket.html">Registrar un Ticket</a>
+                        <a class="nav_a" href="search_client.html"> Buscar un Cliente</a>
+                    </nav>
+                </fieldset>
+            </div>
+
+            <div class="cont_pie">
+                <fieldset>
+                    <legend>General</legend>
+                    <nav>
+                        <a class="nav_a" href="#">Sobre Nosotros</a>
+                        <a class="nav_a" href="#">Contáctanos</a>
+                    </nav>
+                </fieldset>
+            </div>
+        </footer>
+    </body>
+</html>
